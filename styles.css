@@ -49,6 +49,7 @@ img{
     background-color: grey;
     text-align: center;
     color: black;
+    cursor: pointer;
 }
 
 .folder:hover, .recipeMin:hover{
@@ -61,6 +62,13 @@ img{
     margin: 10%;
     background-color: grey;
 }
+
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
 
 /* If the device's screen width is lower than 800px (tablet) it does the following*/
 
