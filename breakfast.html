@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 
 <html lang="en-UK">
-    <head>
-        <title>Web Project</title>
-        <meta charset="utf-8"/>
-        <meta name="Author" content="Leandro Rosas, Ryder Franklin, Luke Aldred">
-        <!--making the page responsive-->   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--adding the CSS style sheet-->
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <!--Importing javascript -->
-        <script type="text/javascript" src="Javascript.js" async defer></script>
-        
-    </head>
 
-    <body>
+<head>
+    <title>Web Project</title>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Leandro Rosas, Ryder Franklin, Luke Aldred">
+    <!--making the page responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--adding the CSS style sheet-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Importing javascript -->
+    <script type="text/javascript" src="Javascript.js" async defer></script>
 
-        
-    </body>
+</head>
+
+<body>
+    <!-- nav bar code-->
+    <nav class="topnav">
+        <a class="active" href="home.html"> Homepage </a>
+    </nav>
+    <h1> Cookbook - Recipes for everyone! </h1>
+
+    <!-- adapted from w3schools-->
+    <!-- three columns -->
+    <div class="row">
+        <div class="column" onclick="openTab('scrambledeggs');" style="background:green;">Scrambled Eggs</div>
+        <div class="column" onclick="openTab('cereal');" style="background:blue;">Cereal</div>
+        <div class="column" onclick="openTab('toast');" style="background:red;">Toast</div>
+    </div>
+
+    <!-- The expanding grid (hidden by default) -->
+    <div id="scrambledeggs" class="containerTab" style="display:none;background:green">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Scrambled Eggs</h2>
+        <p>Ingredients: 2 eggs, 6tbsps of milk, a chunk of butter and a pinch of salt.
+           Equipment: a bowl, a whisk, a non-stick frying pan and a wooden spoon.
+           Instructions:
+                1) insert instructions 
+        </p>
+    </div>
+
+    <div id="cereal" class="containerTab" style="display:none;background:blue">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Cereal</h2>
+        <p>Lorem ipsum..</p>
+    </div>
+
+    <div id="toast" class="containerTab" style="display:none;background:red">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Toast</h2>
+        <p>Lorem ipsum..</p>
+    </div>
+
+</body>
+
+</html>
