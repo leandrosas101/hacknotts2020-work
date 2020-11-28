@@ -8,5 +8,6 @@ function openTab(TabName) {
 }
 
 function filterSelection(Element) {
-
+    var Elements = document.getElementsByClassName("filterDiv");
+    console.log(Elements);
 }
