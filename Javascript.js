@@ -1,13 +1,17 @@
 function openTab(TabName) {
     var Index;
-    var Tabs = document.getElementsByClassName("containerTab");
+    var Tabs = document.getElementsByClassName("recipe");
     for (Index = 0; Index < Tabs.length; Index++) {
         Tabs[Index].style.display = "none";
     }
     document.getElementById(TabName).style.display = "block";
 }
 
-function filterSelection(Element) {
+function filterSelection(Element, Type) {
     var Elements = document.getElementsByClassName("filterDiv");
-    console.log(Elements);
+    var ElementIndex;
+    for (ElementIndex = 0; ElementIndex < Elements.length; ElementIndex++) {
+        ClassNameSplit = Element.className.split(" ");
+        ClassNameTypeSplit = Type.split(" ");
+    }
 }
