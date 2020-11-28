@@ -1,1 +1,1 @@
-document.getElementsByClassName("body");
+document.getElementsByClassName("body").innerHTML = "Hello World";
