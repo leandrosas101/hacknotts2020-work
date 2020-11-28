@@ -22,7 +22,7 @@
     </nav>
     <h1> Cookbook - Recipes for everyone! </h1>
 
-    <!-- adapted from w3schools-->
+    <!-- columns adapted from w3schools-->
     <!-- three columns -->
     <div class="row">
         <div class="recipeMin" onclick="openTab('scrambledeggs');"">Scrambled Eggs</div>
@@ -31,7 +31,7 @@
     </div>
 
     <!-- The expanding grid (hidden by default) -->
-    <div id="scrambledeggs" class="containerTab">
+    <div id="scrambledeggs" class="recipe">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>Scrambled Eggs</h2>
         <p>Ingredients: 2 eggs, 6tbsps of milk, a chunk of butter and a pinch of salt.
@@ -41,7 +41,7 @@
         </p>
     </div>
 
-    <div id="cereal" class="containerTab">
+    <div id="cereal" class="recipe">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>Cereal</h2>
         <p>Ingredients: cereal, milk.
@@ -53,7 +53,7 @@
         </p>
     </div>
 
-    <div id="toast" class="containerTab">
+    <div id="toast" class="recipe">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>Toast</h2>
         <p>Ingredients: bread, butter and jam.
