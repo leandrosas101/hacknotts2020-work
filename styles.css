@@ -1,0 +1,42 @@
+/*remove defaul margin and add backgound colour*/
+body{
+    margin: 0px;
+    background-color: silver;
+}
+/*add pading and align text*/
+header{
+    background-color: rgb(200, 200, 200);
+    padding: 25px;
+    text-align: center;
+}
+/*making the nav bar stick to top and remove marnin and padding*/            
+nav{
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+}
+/*assigning some fonts*/            
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*giving padding to list items because it helps dyslexic people read*/
+li{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+/*making sure images don't take up more space then they should*/
+img{
+    width: 100%;
+}
+/*giving a border to the table(s if I had made more)*/
+table, tr, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
+
+
