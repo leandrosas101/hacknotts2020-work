@@ -9,9 +9,12 @@ h1{
     padding-top: 50px;
     text-align: center;
 }
+h2{
+    width: max-content;
+}
 /*making the nav bar stick to top and remove marnin and padding*/            
 nav{
-    background-color: gray;
+    background-color: grey;
     padding: 0px;
     width: 100%;
     position: absolute;
@@ -43,12 +46,16 @@ img{
     padding: 1%;
     margin: 0.5%;
     float: left;
-    background-color: gray;
+    background-color: grey;
+}
+
+.folder:hover, .recipeMin:hover{
+    box-shadow: 0 0 5px;
 }
 
 .recipe{
     padding: 5%;
-    background-color: gray;
+    background-color: grey;
 }
 
 /* If the device's screen width is lower than 800px (tablet) it does the following*/
@@ -56,8 +63,7 @@ img{
 @media screen and (max-width: 800px){
     /*makes the 2 things show side by side instead of 3*/
     .folder, .recipeMin{
-    width: 48%;
-    padding: 1%;
+    width: 47%;
     }
 
 }
