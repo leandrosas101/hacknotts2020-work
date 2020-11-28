@@ -41,6 +41,8 @@ img{
     width: 30%;
     padding: 1.5%;
     float: left;
+    background-color: gray;
+    border-radius: 25px;
 }
 
 .recipe{
