@@ -6,3 +6,7 @@ function openTab(TabName) {
     }
     document.getElementById(TabName).style.display = "block";
 }
+
+function filterSelection(Element) {
+
+}
