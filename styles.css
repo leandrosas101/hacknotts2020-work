@@ -1,8 +1,16 @@
 /*remove defaul margin and add backgound colour*/
 body{
     margin: 0px;
-    background-color: silver;
+    background-color: darkgrey;
 }
+
+#main{
+    background-color: silver;
+    border-radius: 25px;
+    margin: 0 20%;
+    padding: 5%;
+}
+
 /*add pading and align text*/
 h1{
     padding: 25px;
@@ -16,7 +24,7 @@ h2{
 nav{
     background-color: grey;
     padding: 0px;
-    width: 100%;
+    width: 50%;
     position: absolute;
     top: 0px;
 }
@@ -77,7 +85,15 @@ img{
     .folder, .recipeMin{
     width: 47%;
     }
-
+    #main{
+        background-color: silver;
+        border-radius: 0px;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+    }
 }
 /*If the device's screen width is lower than 500px (phone) it does the following */
 @media screen and (max-width: 500px){
@@ -85,6 +101,14 @@ img{
     .folder, .recipeMin{
         width: 100%;
     }
-
+    #main{
+        background-color: silver;
+        border-radius: 0px;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+    }
 }
 
