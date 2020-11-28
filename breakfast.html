@@ -25,14 +25,13 @@
     <!-- adapted from w3schools-->
     <!-- three columns -->
     <div class="row">
-        <div class="column" onclick="openTab('scrambledeggs');" style="background:green;">Scrambled Eggs</div>
-        <div class="column" onclick="openTab('cereal');" style="background:blue;">Cereal</div>
-        <div class="column" onclick="openTab('toast');" style="background:red;">Toast</div>
+        <div class="recipeMin" onclick="openTab('scrambledeggs');"">Scrambled Eggs</div>
+        <div class="recipeMin" onclick="openTab('cereal');"">Cereal</div>
+        <div class="recipeMin" onclick="openTab('toast');"">Toast</div>
     </div>
 
     <!-- The expanding grid (hidden by default) -->
-    <div id="scrambledeggs" class="containerTab" style="display:none;background:green">
-        <!-- If you want the ability to close the container, add a close button -->
+    <div id="scrambledeggs" class="containerTab">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>Scrambled Eggs</h2>
         <p>Ingredients: 2 eggs, 6tbsps of milk, a chunk of butter and a pinch of salt.
@@ -42,7 +41,7 @@
         </p>
     </div>
 
-    <div id="cereal" class="containerTab" style="display:none;background:blue">
+    <div id="cereal" class="containerTab">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>Cereal</h2>
         <p>Ingredients: cereal, milk.
@@ -54,7 +53,7 @@
         </p>
     </div>
 
-    <div id="toast" class="containerTab" style="display:none;background:red">
+    <div id="toast" class="containerTab">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>Toast</h2>
         <p>Ingredients: bread, butter and jam.
