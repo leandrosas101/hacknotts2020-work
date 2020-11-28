@@ -27,20 +27,3 @@ function filterSelection(Element) {
         }
     }
 }
-
-//for the table sheet
-$.getJSON("https://docs.google.com/spreadsheets/d/1vhB-BkDKROFq8B5EEaXe1nQMvJe-V43w__RgtTEBe-k/edit?usp=sharing", function (data) {
-
-    var sheetData = data.feed.entry;
-
-    var i;
-    for (i = 0; i < sheetData.length; i++) {
-
-      var name = data.feed.entry[i]['gsx$_cn6ca']['$t'];
-      var age = data.feed.entry[i]['gsx$_cokwr']['$t'];
-      var email = data.feed.entry[i]['gsx$_cpzh4']['$t'];
-
-      document.getElementById('demo').innerHTML += ('<tr>'+'<td>'+name+'</td>'+'<td>'+age+'</td>'+'<td>'+email+'</td>'+'</tr>');
-
-    }
-  });
