@@ -22,4 +22,47 @@
     </nav>
     <h1> Cookbook - Recipes for everyone! </h1>
 
+     <!-- columns adapted from w3schools-->
+    <!-- three columns -->
+    <div class="row">
+        <div class="recipeMin" onclick="openTab('spaghetti');"><p>Spaghetti Bolognese</p></div>
+        <div class="recipeMin" onclick="openTab('pasta');"><p>Pasta</p></div>
+        <div class="recipeMin" onclick="openTab('nachos');"><p>Nacho Feast</p></div>
+    </div>
+
+    <!-- The expanding grid (hidden by default) -->
+    <div id="spaghetti" class="recipe" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Spaghetti Bolognese</h2>
+        <p>Ingredients: 2 eggs, 6tbsps of milk, a chunk of butter and a pinch of salt.
+           <br> Equipment: a bowl, a whisk, a non-stick frying pan and a wooden spoon.
+           <br> Instructions:
+           <br>    1) insert instructions 
+        </p>
+    </div>
+
+    <div id="pasta" class="recipe" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Pasta</h2>
+        <p>     Ingredients: cereal, milk.
+           <br> Equipment: bowl, spoon.
+           <br> Instructions:
+            <br>    1) pour the cereal.
+            <br>    2) pour the milk.
+            <br>    3) et voila
+        </p>
+    </div>
+
+    <div id="nachos" class="recipe" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Nacho Feast</h2>
+        <p>Ingredients: bread, butter and jam.
+           <br> Equipment: toaster, plate and knife.
+           <br> Instructions:
+              <br>  1) put bread in toaster. wait.
+              <br>  2) take bread out toaster.
+              <br>  3) spread butter and/or jam.
+              <br>  4) et voila
+        </p>
+    </div>
 </body>
