@@ -17,6 +17,15 @@ nav{
     position: sticky;
     top: 0px;
 }
+nav a{
+    float: left;
+    text-align: center;
+    padding: 15px;
+}
+nav a:hover{
+    background-color:rgb(77, 77, 77);
+}
+
 /*assigning some fonts*/            
 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +35,7 @@ img{
     width: 100%;
 }
 /*aligning the recipes and folders side by side 3 at a time*/
-.folder .recipeMin{
+.folder, .recipeMin{
     width: 30%;
     padding: 1.5%;
     float: left;
@@ -41,7 +50,7 @@ img{
 
 @media screen and (max-width: 800px){
     /*makes the 2 things show side by side instead of 3*/
-    .folder .recipeMin{
+    .folder, .recipeMin{
     width: 48%;
     padding: 1%;
     }
@@ -50,7 +59,7 @@ img{
 /*If the device's screen width is lower than 500px (phone) it does the following */
 @media screen and (max-width: 500px){
     /*displays one by one*/
-    .folder .recipeMin{
+    .folder, .recipeMin{
         width: 100%;
     }
 
