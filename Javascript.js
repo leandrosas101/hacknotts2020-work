@@ -7,11 +7,15 @@ function openTab(TabName) {
     document.getElementById(TabName).style.display = "block";
 }
 
-function filterSelection(Element, Type) {
+function filterSelection(Element) {
     var Elements = document.getElementsByClassName("filterDiv");
     var ElementIndex;
     for (ElementIndex = 0; ElementIndex < Elements.length; ElementIndex++) {
-        ClassNameSplit = Element.className.split(" ");
-        ClassNameTypeSplit = Type.split(" ");
+        Elements[ElementIndex].style.display = "none";
+        if ((Element == "type") && (Elements[ElementIndex] == "filterDiv type")) {
+            Elements[ElementIndex].style.display = "block";
+        } else if ((Element == "ingredient") && (Elements[ElementIndex] == "filterDiv ingredient")) {
+            Elements[ElementIndex].style.display = "block";
+        }
     }
 }
