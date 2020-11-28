@@ -1,3 +1,4 @@
+filterSelection('all');
 function openTab(TabName) {
     var Index;
     var Tabs = document.getElementsByClassName("recipe");
@@ -10,6 +11,11 @@ function openTab(TabName) {
 function filterSelection(Element) {
     var Elements = document.getElementsByClassName("filterDiv");
     var ElementIndex;
+    if (Element == "all") {
+        for (ElementIndex = 0; ElementIndex < Elements.length; ElementIndex++) {
+            Elements[ElementIndex].style.display = "block";
+        }
+    }
     for (ElementIndex = 0; ElementIndex < Elements.length; ElementIndex++) {
         Elements[ElementIndex].style.display = "none";
         if ((Element == "type") && (Elements[ElementIndex] == "filterDiv type")) {
