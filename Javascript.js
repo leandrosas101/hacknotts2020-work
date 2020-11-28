@@ -1,9 +1,10 @@
-FilterFolders("All")
-FilterRecipes("All")
-function FilterRecipes(RecipeName) {
-    var Recipes = document.getElementsByClassName("Filter");
+FilterSelection("all")
+FilterRecipes("all")
+
+function FilterSelection(RecipeName) {
+    var Recipes = document.getElementsByClassName("filterDiv");
     var RecipeIndex;
-    if (RecipeName == "All") {
+    if (RecipeName == "all") {
         for (RecipeIndex = 0; RecipeIndex < Recipes.length; RecipeIndex++) {
             Recipes[RecipeIndex].style.display = "block";
         }
@@ -29,7 +30,7 @@ function FilterFolders(FolderName) {
         if (Folders[FolderIndex] != FolderName) {
             Folders[FolderIndex].style.display = "none";
         } else {
-            Folders[FoldersIndex].style.display = "block";
+            Folders[FolderIndex].style.display = "block";
         }
     }
 }
