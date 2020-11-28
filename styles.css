@@ -21,27 +21,21 @@ nav{
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
-/*giving padding to list items because it helps dyslexic people read*/
-li{
-    font-family: 'Times New Roman', Times, serif;
-    padding: 5px;
-}
 /*making sure images don't take up more space then they should*/
 img{
     width: 100%;
 }
-/*giving a border to the table(s if I had made more)*/
-table, tr, td, th{
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-}
-
+/*aligning the recipes and folders side by side 3 at a time*/
 .folder .recipeMin{
     width: 30%;
     padding: 1.5%;
+    float: left;
 }
 
+.recipe{
+    padding: 5%;
+    background-color: gray;
+}
 
 /* If the device's screen width is lower than 800px (tablet) it does the following*/
 
