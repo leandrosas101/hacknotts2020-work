@@ -74,6 +74,12 @@ img{
     background-color: grey;
 }
 
+.btn{
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+}
+
 .closebtn {
     float: right;
     color: white;
