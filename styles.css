@@ -72,6 +72,7 @@ img{
     padding: 5%;
     margin: 10%;
     background-color: grey;
+    clear: both;
 }
 
 .btn{
