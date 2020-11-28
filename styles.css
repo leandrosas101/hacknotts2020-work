@@ -37,6 +37,28 @@ table, tr, td, th{
     padding: 10px;
 }
 
+.folder .recipeMin{
+    width: 30%;
+    padding: 1.5%;
+}
 
 
+/* If the device's screen width is lower than 800px (tablet) it does the following*/
+
+@media screen and (max-width: 800px){
+    /*makes the 2 things show side by side instead of 3*/
+    .folder .recipeMin{
+    width: 48%;
+    padding: 1%;
+    }
+
+}
+/*If the device's screen width is lower than 500px (phone) it does the following */
+@media screen and (max-width: 500px){
+    /*displays one by one*/
+    .folder .recipeMin{
+        width: 100%;
+    }
+
+}
 
