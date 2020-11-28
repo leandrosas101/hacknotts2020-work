@@ -8,19 +8,19 @@ function openTab(TabName) {
 }
 
 function filterSelection(Element) {
-    var Elements = document.getElementsByClassName("filterDiv");
+    var Elements = document.getElementsByClassName("folder");
     var ElementIndex;
     for (ElementIndex = 0; ElementIndex < Elements.length; ElementIndex++) {
         Elements[ElementIndex].style.display = "none";
         if (Element == "all") {
             Elements[ElementIndex].style.display = "block";
         } else if (Element == "type") {
-            var TypeClasses = document.getElementsByClassName("filterDiv type");
+            var TypeClasses = document.getElementsByClassName("folder type");
             for (TypeIndex = 0; TypeIndex < TypeClasses.length; TypeIndex++) {
                     TypeClasses[TypeIndex].style.display = "block";
             }
         } else {
-            var IngredientClasses = document.getElementsByClassName("filterDiv ingredient");
+            var IngredientClasses = document.getElementsByClassName("folder ingredient");
             for (IngredientIndex = 0; IngredientIndex < IngredientClasses.length; IngredientIndex++) {
                 IngredientClasses[IngredientIndex].style.display = "block";
             }
