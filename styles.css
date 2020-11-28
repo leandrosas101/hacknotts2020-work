@@ -24,9 +24,12 @@ h2{
 nav{
     background-color: grey;
     padding: 0px;
-    width: 50%;
+    width: 100%;
     position: absolute;
     top: 0px;
+}
+#mainNav{
+    width: 50%;
 }
 nav a{
     float: left;
@@ -91,7 +94,7 @@ img{
         margin: 0;
         padding: 0;
     }
-    nav{
+    #mainNav{
         width: 100%;
     }
 }
@@ -107,7 +110,7 @@ img{
         margin: 0;
         padding: 0;
     }
-    nav{
+    #mainNav{
         width: 100%;
     }
 }
