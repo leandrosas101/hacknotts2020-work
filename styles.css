@@ -56,7 +56,9 @@ img{
 }
 
 .recipe{
+    border-radius: 25px;
     padding: 5%;
+    margin: 10%;
     background-color: grey;
 }
 
