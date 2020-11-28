@@ -14,14 +14,16 @@ function filterSelection(Element) {
         Elements[ElementIndex].style.display = "none";
         if (Element == "all") {
             Elements[ElementIndex].style.display = "block";
+        } else if (Element == "type") {
+            var TypeClasses = document.getElementsByClassName("filterDiv type");
+            for (TypeIndex = 0; TypeIndex < TypeClasses.length; TypeIndex++) {
+                    TypeClasses[TypeIndex].style.display = "block";
+            }
         } else {
-            Elements[ElementIndex].style.display = "none";
-            /*var ClassNameSplit = Elements[ElementIndex].className.split(" ");
-            if (ClassNameSplit[1] == "type") {
-                Elements[ElementIndex].style.display = "block";
-            } else {
-                Elements[ElementIndex].style.display = "block";
-            }*/
+            var IngredientClasses = document.getElementsByClassName("filterDiv ingredient");
+            for (IngredientIndex = 0; IngredientIndex < IngredientClasses.length; IngredientIndex++) {
+                IngredientClasses[IngredientIndex].style.display = "block";
+            }
         }
     }
 }
