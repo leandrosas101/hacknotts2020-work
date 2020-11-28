@@ -47,6 +47,7 @@ img{
     margin: 0.5%;
     float: left;
     background-color: grey;
+    text-align: center;
 }
 
 .folder:hover, .recipeMin:hover{
