@@ -12,10 +12,16 @@ function filterSelection(Element) {
     var ElementIndex;
     for (ElementIndex = 0; ElementIndex < Elements.length; ElementIndex++) {
         Elements[ElementIndex].style.display = "none";
-        if ((Element == "type") && (Elements[ElementIndex] == "filterDiv type")) {
+        if (Element == "all") {
             Elements[ElementIndex].style.display = "block";
-        } else if ((Element == "ingredient") && (Elements[ElementIndex] == "filterDiv ingredient")) {
-            Elements[ElementIndex].style.display = "block";
+        } else {
+            Elements[ElementIndex].style.display = "none";
+            /*var ClassNameSplit = Elements[ElementIndex].className.split(" ");
+            if (ClassNameSplit[1] == "type") {
+                Elements[ElementIndex].style.display = "block";
+            } else {
+                Elements[ElementIndex].style.display = "block";
+            }*/
         }
     }
 }
