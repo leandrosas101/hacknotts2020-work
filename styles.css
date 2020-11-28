@@ -1,17 +1,15 @@
-/*remove defaul margin and add backgound colour*/
+/*body and section(id main) styles*/
 body{
     margin: 0px;
     background-color: darkgrey;
 }
-
 #main{
     background-color: silver;
     border-radius: 25px;
     margin: 0 20%;
     padding: 5%;
 }
-
-/*add pading and align text*/
+/*header styles*/
 h1{
     padding: 25px;
     padding-top: 50px;
@@ -20,16 +18,13 @@ h1{
 h2{
     width: max-content;
 }
-/*making the nav bar stick to top and remove marnin and padding*/            
+/*nav styles*/            
 nav{
     background-color: grey;
     padding: 0px;
     width: 100%;
     position: absolute;
     top: 0px;
-}
-#mainNav{
-    width: 50%;
 }
 nav a{
     float: left;
@@ -41,16 +36,14 @@ nav a{
 nav a:hover{
     background-color:rgb(77, 77, 77);
 }
-
+#mainNav{
+    width: 50%;
+}
 /*assigning some fonts*/            
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
-/*making sure images don't take up more space then they should*/
-img{
-    width: 100%;
-}
-/*aligning the recipes and folders side by side 3 at a time*/
+/*aligning the minimized recipes and folders side by side*/
 .folder, .recipeMin{
     border-radius: 25px;
     width: 30.33%;
@@ -62,11 +55,10 @@ img{
     color: black;
     cursor: pointer;
 }
-
 .folder:hover, .recipeMin:hover{
     box-shadow: 0 0 5px;
 }
-
+/*estended recipe styles*/
 .recipe{
     border-radius: 25px;
     padding: 5%;
@@ -74,24 +66,19 @@ img{
     background-color: grey;
     clear: both;
 }
-
 .btn{
     width: 20%;
     padding: 1%;
     margin: 1%;
 }
-
 .closebtn {
     float: right;
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
-
-/* If the device's screen width is lower than 800px (tablet) it does the following*/
-
+}
+/*media querie for tablet*/
 @media screen and (max-width: 800px){
-    /*makes the 2 things show side by side instead of 3*/
     .folder, .recipeMin{
     width: 47%;
     }
@@ -105,9 +92,8 @@ img{
         width: 100%;
     }
 }
-/*If the device's screen width is lower than 500px (phone) it does the following */
+/*media querie for phone*/
 @media screen and (max-width: 500px){
-    /*displays one by one*/
     .folder, .recipeMin{
         width: 100%;
     }
@@ -121,4 +107,3 @@ img{
         width: 100%;
     }
 }
-
