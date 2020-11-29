@@ -25,14 +25,21 @@
     <!-- columns adapted from w3schools-->
     <!-- three columns -->
     <div class="row">
-        <div class="recipeMin" onclick="openTab('sandwich');"><p>Sandwich</p></div>
-        <div class="recipeMin" onclick="openTab('soup');"><p>Tomato Soup</p></div>
-        <div class="recipeMin" onclick="openTab('wrap');"><p>Salad Wrap</p></div>
+        <div class="recipeMin" onclick="openTab('sandwich');">
+            <img src="images/sandwich.jpeg" alt="sandwich">
+            <p>Sandwich</p></div>
+        <div class="recipeMin" onclick="openTab('soup');">
+            <img src="images/soup.jpg" alt="soup">
+            <p>Tomato Soup</p></div>
+        <div class="recipeMin" onclick="openTab('wrap');">
+            <img src="images/wrap.jpg" alt="wrap">
+            <p>Salad Wrap</p></div>
     </div>
 
     <!-- The expanding grid (hidden by default) -->
     <div id="sandwich" class="recipe" style="display:none;">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <img class = "recipeImg" src="images/sandwich.jpeg" alt="sandwich">
         <h2>Sandwich</h2>
         <p>Ingredients: bread, butter and sandwich fillings.
            <br> Equipment: a plate and a knife.
@@ -48,6 +55,7 @@
 
     <div id="soup" class="recipe" style="display:none;">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <img class = "recipeImg" src="images/soup.jpg" alt="soup">
         <h2>Tomato Soup</h2>
         <p>     Ingredients: tomato soup.
            <br> Equipment: bowl, microwave and spoon.
@@ -60,6 +68,7 @@
 
     <div id="wrap" class="recipe" style="display:none;">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <img class = "recipeImg" src="images/wrap.jpg" alt="wrap">
         <h2>Salad Wrap</h2>
         <p>Ingredients: wrap, fillings.
            <br> Equipment: a plate.

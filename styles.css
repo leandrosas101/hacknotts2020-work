@@ -43,6 +43,13 @@ nav a:hover{
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
+img{
+    width: 100%;
+}
+.recipeImg{
+    width: 40%;
+    float: left;
+}
 /*aligning the minimized recipes and folders side by side*/
 .folder, .recipeMin{
     border-radius: 25px;
