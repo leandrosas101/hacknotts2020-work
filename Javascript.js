@@ -8,7 +8,7 @@ function openTab(TabName) { //Function opens the clicked tab, revealing addition
     document.getElementById(TabName).style.display = "block"; //Sets the display value of the clicked class (the parameter "TabName") to "block", showing the class
 }
 
-//Lines 12-15 were adapted from https://www.w3schools.com/howto/howto_js_filter_elements.asp (How TO - Filter Elements by W3Schools)
+//Lines 12-15 and 17 were adapted from https://www.w3schools.com/howto/howto_js_filter_elements.asp (How TO - Filter Elements by W3Schools)
 function filterSelection(Element) { //Function filters through the folders and displays the classes which meet the filter
     var Elements = document.getElementsByClassName("folder"); //Collects all the classes with the class name of "folder"
     var ElementIndex;
