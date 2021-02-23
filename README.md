@@ -1,2 +1,2 @@
-# hacknotts2020-work
-it's hacknotts2020's work
+# hacknotts2020
+it's the project our team worked on for hacknotts 2020
